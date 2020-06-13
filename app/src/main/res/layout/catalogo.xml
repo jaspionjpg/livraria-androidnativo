@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="livraria.richardmartins.com.br.livraria.Catalogo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            app:srcCompat="@mipmap/images" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:background="#FF0000"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  Livraria Aldeia da Folha" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="  Catalogo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/listarTodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar todos os livros"
+        android:onClick="irListaTodosLivros"/>
+
+    <Button
+        android:id="@+id/listarCategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Listar livros por categoria"
+        android:onClick="irLivrosCategoria"/>
+
+    <Button
+        android:id="@+id/pesquisar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pesquisar livros"
+        android:onClick="irPesquisarLivros"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:onClick="irHome" />
+</LinearLayout>
